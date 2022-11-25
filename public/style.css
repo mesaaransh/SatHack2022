@@ -3,8 +3,65 @@
     padding: 0;
 }
 
+input{
+    background-color: transparent;
+    border: 0px solid;
+    outline: 0px solid;
+    border-bottom: 2px solid #afafaf;
+
+    color: #303030;
+    font-weight: bold;
+}
+
+option{
+    background-color: #121212;
+    border: 0px solid;
+    outline: 0px solid;
+
+    color: #e2e2e2;
+}
+
+select{
+    background-color: #121212;
+    border: 0px solid;
+    outline: 0px solid;
+
+    margin-left: 55px;
+    width: 300px;
+    color: #e2e2e2;
+}
+
+textarea{
+    background-color: transparent;
+    border: 0px solid;
+    outline: 0px solid;
+    border-bottom: 2px solid #afafaf;
+
+    color: #303030;
+    font-weight: bold;
+}
+
+
+.bgDark{
+    background-color: #121212;
+}
+
+a.signlink{
+    text-decoration: none;
+    color: #303030;
+}
+
+a{
+    text-decoration: none;
+}
+
 .wrapper{
     height: 100vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .loginleft{
@@ -39,6 +96,7 @@
 
 .loginright{
     width: 60%;
+    height: 100vh;
     background-color: #e2e2e2;
 
     padding: 0 100px;
@@ -47,43 +105,44 @@
     justify-content: center;
 }
 
-.logo{
-    width: max-content;
-    height: max-content;
-
-    padding: 0 10px;
-    padding-bottom: 3px;
-    border: 5px solid #e2e2e2;
-    border-radius: 10px;
-}
-
 .loginform{
     display: flex;
     flex-direction: column;
+    width: 500px;
 }
 
 .inputFeild{
     display: flex;
     flex-direction: column;
+    color: #e2e2e2;
 
     margin-top: 30px;
 }
 
-input{
-    background-color: transparent;
-    border: 0px solid;
-    outline: 0px solid;
-    border-bottom: 2px solid #afafaf;
+.textFeild{
+    display: flex;
+    flex-direction: column;
+    color: #e2e2e2;
 
-    color: #303030;
-    font-weight: bold;
+    margin-top: 30px;
 }
+
+.namein{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
 
 label{
     font-weight: bold;
     color: #8a8a8a;
 
     margin-bottom: 5px;
+}
+
+.ml{
+    width: 50px;
 }
 
 .signupbtn{
@@ -99,3 +158,346 @@ label{
     margin-top: 50px;
     margin-right: 10px;
 }
+
+.contactbtn{
+    width: 100px;
+    height: 40px;
+
+    background-color: #e2e2e2;
+    border-radius: 100px;
+    border: 0px solid;
+
+    color:#121212;
+
+    margin-top: 50px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dashwrap{
+    background-color: #121212;
+    padding: 0 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnwrap{
+    width: 1020px;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logincont{
+    height: 370px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #303030;
+}
+
+.navcontwrap{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    background-color: #121212;
+}
+
+.navcontleft{
+    height: 370px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.navcontright{
+    height: 370px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+.navbtn{
+    width: 240px;
+    height: 175px;
+    background-color: #0454f5;
+
+    flex-basis: 0.5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tl{
+    background-color: #0454f5;
+}
+
+.tr{
+    background-color: #00b4f5;
+}
+
+.bl{
+    background-color: #f50b44;
+}
+
+.br{
+    background-color: #f5a600;
+}
+
+
+.navimg{
+    border-radius: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #e2e2e2;
+    margin-bottom: 10px;
+}
+
+.navhead{
+    font-size: 20px;
+    font-weight: bold;
+    color: #e2e2e2;
+    padding: 0;
+    margin: 0;
+}
+
+.navbody{
+    font-size: 15px;
+    color: #e2e2e2;
+    width: 100%;
+    text-align: center;
+    padding: 0 5px;
+}
+
+.loginimg{
+    width: 120px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+    background-color: #e2e2e2;
+
+    margin-bottom: 20px;
+}
+
+.regbtn{
+    width: 100px;
+    height: 50px;
+    color: #e2e2e2;
+    font-weight: bold;
+
+    border-radius: 100px;
+    background-color: #f50b44;
+    border: 0px solid;
+}
+
+.logbtn{
+    width: 100px;
+    height: 50px;
+    color: #e2e2e2;
+    font-weight: bold;
+    
+    margin-left: 20px;
+    border-radius: 100px;
+    border: 2px solid #f50b44;
+    background-color: transparent;
+}
+
+.loghead{
+    color: #e2e2e2;
+}
+
+.logtxt{
+    color: #e2e2e2;
+}
+
+
+
+.logo{
+    height: 300px;
+    width: 300px;
+    margin-top: -100px;
+    margin-left: -50px;
+    margin-bottom: -100px;
+    aspect-ratio: 1;
+}
+
+
+
+.rankcont{
+    width: 100%;
+
+
+    background-color: #121212;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rankhead{
+    width: 200px;
+}
+
+.rank{
+    width: 1020px;
+    height: 50px;
+    background-color: #e2e2e2;
+    border-radius: 100px;
+
+    margin-bottom: 30px;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rankinghead{
+    color: #e2e2e2;
+}
+
+.contactcont{
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.complaincont{
+    width: 100%;
+    height: 100vh;
+    background-color: #121212;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.contag{
+    width: 500px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.allcomplaints{
+    background-color: #121212;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.complainhead{
+    color: #e2e2e2;
+    font-size: 50px;
+    margin: 50px 0;
+}
+
+.complainitem{
+    width: 1000px;
+    background-color: #303030;
+    margin-bottom: 50px;
+
+    padding: 20px 50px;
+}
+
+.complainthead{
+    color: #e2e2e2;
+    margin-bottom: 30px;
+}
+
+.complaintbody{
+    color: #e2e2e2;
+}
+
+.iconset > i{
+    font-size: 40px;
+    cursor: pointer;
+    color: #8a8a8a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
