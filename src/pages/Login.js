@@ -1,38 +1,51 @@
 import React, { Component } from 'react'
+import { Link, useFetcher } from 'react-router-dom'
 import InputFeild from '../modules/login/InputFeild'
 
 
-function Login() {
+function Register() {
+
+    // fetch('https://example.com/posts', {
+    //     method: 'POST',
+    //     body: formData,
+    // })
+    //     .then((response) => response.json())
+    //     .then((result) => {
+    //         console.log('Success:', result);
+    //     })
+    //     .catch((error) => {
+    //         console.error('Error:', error);
+    //     });
+
     return (
         <>
-        <div className="wrapper d-flex">
-            <div className="loginleft">
-                <h1 className='loginTitle'>Sign Up</h1>
-                <hr className='seperator'/>
-                <p className='loginText'> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime repudiandae eius dolorum expedita tempora provident sequi soluta, ut quo cum.</p>
+            <div className="wrapper d-flex">
+                <div className="loginleft">
+                    <h1 className='loginTitle'>Sign In</h1>
+                    <hr className='seperator' />
+                    <p className='loginText'> Click on Login button to explore online Community Complain Service &  more value-added services offered by <b>Izzan</b></p>
 
-                <h1 className='logo'>LOGO</h1>
+                    <img className='logo' src="./logo.jpeg" alt="" />
+                </div>
+
+                <div className="loginright">
+                    <form className='loginform' action="">
+                        <InputFeild label={"Email"} type={"email"} />
+                        <InputFeild label={"Password"} type={"Password"} />
+                        <div>
+                            <Link to={"/dash"}>
+                                <button className='signupbtn'>
+                                    Sign In
+                                </button>
+                            </Link>
+
+                            or <Link className='signlink' to={"/register"}>Sign Up</Link>
+                        </div>
+
+                    </form>
+                </div>
             </div>
-
-            <div className="loginright">
-                <form className='loginform' action="">
-                    <InputFeild label = {"Username"} type = {"text"}/>
-                    <InputFeild label = {"Email"} type = {"email"}/>
-                    <InputFeild label = {"Password"} type = {"Password"}/>
-                    <InputFeild label = {"Confirm Password"} type = {"Password"}/>
-
-                    <div>
-                        <button className='signupbtn'>
-                            Sign Up
-                        </button>
-
-                        or <a href="">Sign In</a>
-                    </div>
-                    
-                </form>
-            </div>
-        </div>
-    </>
+        </>
     )
-  }
-export default Login
+}
+export default Register
